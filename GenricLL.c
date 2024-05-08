@@ -33,7 +33,10 @@ printf(" %f", *(float *)f);
 int main() 
 { 
 	struct Node *start = NULL; 
+	int y=2;
+	float k=2.2;
 	unsigned int_size = sizeof(int);
+	unsigned float_size = sizeof(float); 	
     int *arr;
     int n;
     printf("Enter Size Of Integer array:-");
@@ -48,7 +51,7 @@ int main()
 	insert(&start, &arr[i], int_size); 
 	printf("Created integer linked list is \n"); 
 	printList(start, printInt); 
-	unsigned float_size = sizeof(float); 
+	
 	start = NULL; 
     float *arr2;
     printf("\nEnter Size Of Float array:-");
